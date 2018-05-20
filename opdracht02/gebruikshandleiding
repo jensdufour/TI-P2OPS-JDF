@@ -1,0 +1,34 @@
+## LAMP
+1. Virtuele machine
+a. Vagrant installeren
+Je kan vagrant downloaden met de volgende link: https://www.vagrantup.com/downloads.html
+
+b.Virtual box installeren
+Deze kan je downloaden met de volgende link: https://www.virtualbox.org/wiki/Downloads.
+
+c. Installatiescript laten lopen
+Open het start_script.sh met een bashterminal.
+
+2. Productieomgeving
+a. Open een terminal op een Productieomgeving met CentOS 7. De meeste hosting providers bieden deze in klaarstaat aan.
+
+b. Run volgende commando:
+  sh config_script.sh && test_script.sh
+  Surf in een webbrowser naar 192.168.56.10 voor het openen van de WordPress installatie.
+
+## WISA
+1. Virtuele machine
+a. Vagrant installeren
+Je kan vagrant downloaden met de volgende link: https://www.vagrantup.com/downloads.html
+
+b.Virtual box installeren
+Deze kan je downloaden met de volgende link: https://www.virtualbox.org/wiki/Downloads.
+
+c. Installatiescript laten lopen
+Open een bashterminal en run "vagrant up"
+
+2. Productieomgeving
+a. Login in een productieomgeving met Windows Server 2016. Er zijn verscheidene hostingproviders die deze aanbieden in klaarstaat.
+
+b. Run installatiescripts
+  Druk met de rechtermuisknop eerst op IIS.ps1 en klik op "Uitvoeren met PowerShell", na afloop van dit script kan dit herhaald worden voor MySALASP.ps1.

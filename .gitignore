@@ -1,0 +1,30 @@
+## .gitignore -- Voeg in dit bestand de namen toe van bestanden die niet in
+## het versiebeheersysteem thuis horen. Tekstpatronen (*, ?, ...) kunnen ook.
+
+# Editor backup files
+.*~
+*~
+*.bak
+
+# Virtual machine files
+*.iso
+*.box
+*.ova
+*.vmdk
+
+## Vagrant
+# .gitignore
+
+# Hidden Vagrant-directory
+.vagrant
+
+# Backup files (e.g. Vim, Gedit, etc.)
+*~
+
+# Vagrant base boxes (you never know when someone puts one in the repository)
+*.box
+
+# VirtualBox appliances
+*.ova
+
+opdracht02/SAP/src/*

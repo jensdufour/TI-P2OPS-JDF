@@ -1,0 +1,18 @@
+
+Vagrant.configure("2") do |config|
+ 
+  config.vm.box = "QDB/OpensuseForSAP"
+config.vm.network "private_network", ip: "192.168.56.11"   
+    
+config.vm.network "forwarded_port", guest: 8000, guest_ip:"10.0.2.15", host: 8000, host_ip:"127.0.0.1", protocol: "tcp"
+config.vm.network "forwarded_port", guest: 44300, guest_ip:"10.0.2.15", host: 44300, host_ip:"127.0.0.1", protocol: "tcp"
+config.vm.network "forwarded_port", guest: 3300, guest_ip:"10.0.2.15", host: 3300, host_ip:"127.0.0.1", protocol: "tcp"    
+config.vm.network "forwarded_port", guest: 3200, guest_ip:"10.0.2.15", host: 3200, host_ip:"127.0.0.1", protocol: "tcp"    
+    config.vm.synced_folder "src/", "/src"
+    config.vm.provision "Step 1", type: "shell", path: "script.sh"
+ 
+  config.vm.provision "Step 2", type: "shell", path: "script2.sh"
+    
+    
+ 
+end
